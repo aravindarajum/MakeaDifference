@@ -41,10 +41,6 @@ def setup(request,browser,url):
 def pytest_addoption(parser):
     parser.addoption("--browser")
     parser.addoption("--url")
-    # parser.addoption("--browser", action="store", default="chrome",
-    #                  help="Browser to run tests on (chrome, firefox, edge)")
-    # parser.addoption("--url", action="store", default="https://aravindaec.wixsite.com/makeadifference",
-    #                  help="URL of the web application")
 
 
 @pytest.fixture(scope="class",autouse=True)
